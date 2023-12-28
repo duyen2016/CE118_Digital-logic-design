@@ -1,0 +1,101 @@
+|BCD_COUNTER
+Q[0] <= UP_DOWN_BCD_32COUNTER:inst.Q[0]
+Q[1] <= UP_DOWN_BCD_32COUNTER:inst.Q[1]
+Q[2] <= UP_DOWN_BCD_32COUNTER:inst.Q[2]
+Q[3] <= UP_DOWN_BCD_32COUNTER:inst.Q[3]
+Q[4] <= UP_DOWN_BCD_32COUNTER:inst.Q[4]
+D => UP_DOWN_BCD_32COUNTER:inst.D
+E => UP_DOWN_BCD_32COUNTER:inst.E
+CLK => UP_DOWN_BCD_32COUNTER:inst.CLK
+RESET => UP_DOWN_BCD_32COUNTER:inst.Reset
+
+
+|BCD_COUNTER|UP_DOWN_BCD_32COUNTER:inst
+Q[0] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Reset => inst14.ACLR
+Reset => inst13.ACLR
+Reset => inst12.ACLR
+Reset => inst10.ACLR
+Reset => inst15.ACLR
+CLK => inst14.CLK
+CLK => inst13.CLK
+CLK => inst12.CLK
+CLK => inst10.CLK
+CLK => inst15.CLK
+D => HAS:inst5.Down
+D => HAS:inst8.Down
+D => HAS:inst6.Down
+D => HAS:inst7.Down
+D => HAS:inst9.Down
+E => HAS:inst8.Cin
+
+
+|BCD_COUNTER|UP_DOWN_BCD_32COUNTER:inst|HAS:inst5
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst6.IN0
+Cin => inst1.IN2
+Cin => inst9.IN1
+Down => inst6.IN1
+Down => inst.IN0
+notQ => inst6.IN2
+Q => inst1.IN0
+Q => inst9.IN0
+D <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_COUNTER|UP_DOWN_BCD_32COUNTER:inst|HAS:inst8
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst6.IN0
+Cin => inst1.IN2
+Cin => inst9.IN1
+Down => inst6.IN1
+Down => inst.IN0
+notQ => inst6.IN2
+Q => inst1.IN0
+Q => inst9.IN0
+D <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_COUNTER|UP_DOWN_BCD_32COUNTER:inst|HAS:inst6
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst6.IN0
+Cin => inst1.IN2
+Cin => inst9.IN1
+Down => inst6.IN1
+Down => inst.IN0
+notQ => inst6.IN2
+Q => inst1.IN0
+Q => inst9.IN0
+D <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_COUNTER|UP_DOWN_BCD_32COUNTER:inst|HAS:inst7
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst6.IN0
+Cin => inst1.IN2
+Cin => inst9.IN1
+Down => inst6.IN1
+Down => inst.IN0
+notQ => inst6.IN2
+Q => inst1.IN0
+Q => inst9.IN0
+D <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|BCD_COUNTER|UP_DOWN_BCD_32COUNTER:inst|HAS:inst9
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst6.IN0
+Cin => inst1.IN2
+Cin => inst9.IN1
+Down => inst6.IN1
+Down => inst.IN0
+notQ => inst6.IN2
+Q => inst1.IN0
+Q => inst9.IN0
+D <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+

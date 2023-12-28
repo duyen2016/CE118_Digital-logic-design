@@ -1,0 +1,2328 @@
+|RAM16x8bit
+OUT[0] <= OUT~7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT~6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT~5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT~4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT~3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= OUT~2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= OUT~1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= OUT~0.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => RAM4x8bit:inst.A0
+A[0] => RAM4x8bit:inst7.A0
+A[0] => RAM4x8bit:inst9.A0
+A[0] => RAM4x8bit:inst10.A0
+A[1] => RAM4x8bit:inst.A1
+A[1] => RAM4x8bit:inst7.A1
+A[1] => RAM4x8bit:inst9.A1
+A[1] => RAM4x8bit:inst10.A1
+A[2] => DECODE2_4:inst4.A0
+A[3] => DECODE2_4:inst4.A1
+CS => inst8.IN0
+CS => inst80.IN1
+CS => inst70.IN1
+CS => inst60.IN1
+CS => inst5.IN1
+RWS => inst8.IN1
+IN[0] => RAM4x8bit:inst.IN[0]
+IN[0] => RAM4x8bit:inst7.IN[0]
+IN[0] => RAM4x8bit:inst9.IN[0]
+IN[0] => RAM4x8bit:inst10.IN[0]
+IN[1] => RAM4x8bit:inst.IN[1]
+IN[1] => RAM4x8bit:inst7.IN[1]
+IN[1] => RAM4x8bit:inst9.IN[1]
+IN[1] => RAM4x8bit:inst10.IN[1]
+IN[2] => RAM4x8bit:inst.IN[2]
+IN[2] => RAM4x8bit:inst7.IN[2]
+IN[2] => RAM4x8bit:inst9.IN[2]
+IN[2] => RAM4x8bit:inst10.IN[2]
+IN[3] => RAM4x8bit:inst.IN[3]
+IN[3] => RAM4x8bit:inst7.IN[3]
+IN[3] => RAM4x8bit:inst9.IN[3]
+IN[3] => RAM4x8bit:inst10.IN[3]
+IN[4] => RAM4x8bit:inst.IN[4]
+IN[4] => RAM4x8bit:inst7.IN[4]
+IN[4] => RAM4x8bit:inst9.IN[4]
+IN[4] => RAM4x8bit:inst10.IN[4]
+IN[5] => RAM4x8bit:inst.IN[5]
+IN[5] => RAM4x8bit:inst7.IN[5]
+IN[5] => RAM4x8bit:inst9.IN[5]
+IN[5] => RAM4x8bit:inst10.IN[5]
+IN[6] => RAM4x8bit:inst.IN[6]
+IN[6] => RAM4x8bit:inst7.IN[6]
+IN[6] => RAM4x8bit:inst9.IN[6]
+IN[6] => RAM4x8bit:inst10.IN[6]
+IN[7] => RAM4x8bit:inst.IN[7]
+IN[7] => RAM4x8bit:inst7.IN[7]
+IN[7] => RAM4x8bit:inst9.IN[7]
+IN[7] => RAM4x8bit:inst10.IN[7]
+
+
+|RAM16x8bit|RAM4x8bit:inst
+OUT[0] <= OUT~7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT~6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT~5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT~4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT~3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= OUT~2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= OUT~1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= OUT~0.DB_MAX_OUTPUT_PORT_TYPE
+CS => inst34.IN0
+CS => inst36.IN0
+CS => inst5.IN1
+CS => inst35.IN0
+CS => inst37.IN0
+A1 => DECODE2_4:inst4.A1
+A0 => DECODE2_4:inst4.A0
+RWS => inst5.IN0
+IN[0] => MCx8:inst3.IN[0]
+IN[0] => MCx8:inst2.IN[0]
+IN[0] => MCx8:inst1.IN[0]
+IN[0] => MCx8:inst.IN[0]
+IN[1] => MCx8:inst3.IN[1]
+IN[1] => MCx8:inst2.IN[1]
+IN[1] => MCx8:inst1.IN[1]
+IN[1] => MCx8:inst.IN[1]
+IN[2] => MCx8:inst3.IN[2]
+IN[2] => MCx8:inst2.IN[2]
+IN[2] => MCx8:inst1.IN[2]
+IN[2] => MCx8:inst.IN[2]
+IN[3] => MCx8:inst3.IN[3]
+IN[3] => MCx8:inst2.IN[3]
+IN[3] => MCx8:inst1.IN[3]
+IN[3] => MCx8:inst.IN[3]
+IN[4] => MCx8:inst3.IN[4]
+IN[4] => MCx8:inst2.IN[4]
+IN[4] => MCx8:inst1.IN[4]
+IN[4] => MCx8:inst.IN[4]
+IN[5] => MCx8:inst3.IN[5]
+IN[5] => MCx8:inst2.IN[5]
+IN[5] => MCx8:inst1.IN[5]
+IN[5] => MCx8:inst.IN[5]
+IN[6] => MCx8:inst3.IN[6]
+IN[6] => MCx8:inst2.IN[6]
+IN[6] => MCx8:inst1.IN[6]
+IN[6] => MCx8:inst.IN[6]
+IN[7] => MCx8:inst3.IN[7]
+IN[7] => MCx8:inst2.IN[7]
+IN[7] => MCx8:inst1.IN[7]
+IN[7] => MCx8:inst.IN[7]
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst3|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|DECODE2_4:inst4
+D[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst5.IN0
+A0 => inst2.IN0
+A0 => inst3.IN1
+A0 => inst5.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst2|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst1|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst|MCx8:inst|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|DECODE2_4:inst4
+D[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst5.IN0
+A0 => inst2.IN0
+A0 => inst3.IN1
+A0 => inst5.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7
+OUT[0] <= OUT~7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT~6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT~5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT~4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT~3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= OUT~2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= OUT~1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= OUT~0.DB_MAX_OUTPUT_PORT_TYPE
+CS => inst34.IN0
+CS => inst36.IN0
+CS => inst5.IN1
+CS => inst35.IN0
+CS => inst37.IN0
+A1 => DECODE2_4:inst4.A1
+A0 => DECODE2_4:inst4.A0
+RWS => inst5.IN0
+IN[0] => MCx8:inst3.IN[0]
+IN[0] => MCx8:inst2.IN[0]
+IN[0] => MCx8:inst1.IN[0]
+IN[0] => MCx8:inst.IN[0]
+IN[1] => MCx8:inst3.IN[1]
+IN[1] => MCx8:inst2.IN[1]
+IN[1] => MCx8:inst1.IN[1]
+IN[1] => MCx8:inst.IN[1]
+IN[2] => MCx8:inst3.IN[2]
+IN[2] => MCx8:inst2.IN[2]
+IN[2] => MCx8:inst1.IN[2]
+IN[2] => MCx8:inst.IN[2]
+IN[3] => MCx8:inst3.IN[3]
+IN[3] => MCx8:inst2.IN[3]
+IN[3] => MCx8:inst1.IN[3]
+IN[3] => MCx8:inst.IN[3]
+IN[4] => MCx8:inst3.IN[4]
+IN[4] => MCx8:inst2.IN[4]
+IN[4] => MCx8:inst1.IN[4]
+IN[4] => MCx8:inst.IN[4]
+IN[5] => MCx8:inst3.IN[5]
+IN[5] => MCx8:inst2.IN[5]
+IN[5] => MCx8:inst1.IN[5]
+IN[5] => MCx8:inst.IN[5]
+IN[6] => MCx8:inst3.IN[6]
+IN[6] => MCx8:inst2.IN[6]
+IN[6] => MCx8:inst1.IN[6]
+IN[6] => MCx8:inst.IN[6]
+IN[7] => MCx8:inst3.IN[7]
+IN[7] => MCx8:inst2.IN[7]
+IN[7] => MCx8:inst1.IN[7]
+IN[7] => MCx8:inst.IN[7]
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst3|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|DECODE2_4:inst4
+D[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst5.IN0
+A0 => inst2.IN0
+A0 => inst3.IN1
+A0 => inst5.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst2|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst1|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst7|MCx8:inst|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9
+OUT[0] <= OUT~7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT~6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT~5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT~4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT~3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= OUT~2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= OUT~1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= OUT~0.DB_MAX_OUTPUT_PORT_TYPE
+CS => inst34.IN0
+CS => inst36.IN0
+CS => inst5.IN1
+CS => inst35.IN0
+CS => inst37.IN0
+A1 => DECODE2_4:inst4.A1
+A0 => DECODE2_4:inst4.A0
+RWS => inst5.IN0
+IN[0] => MCx8:inst3.IN[0]
+IN[0] => MCx8:inst2.IN[0]
+IN[0] => MCx8:inst1.IN[0]
+IN[0] => MCx8:inst.IN[0]
+IN[1] => MCx8:inst3.IN[1]
+IN[1] => MCx8:inst2.IN[1]
+IN[1] => MCx8:inst1.IN[1]
+IN[1] => MCx8:inst.IN[1]
+IN[2] => MCx8:inst3.IN[2]
+IN[2] => MCx8:inst2.IN[2]
+IN[2] => MCx8:inst1.IN[2]
+IN[2] => MCx8:inst.IN[2]
+IN[3] => MCx8:inst3.IN[3]
+IN[3] => MCx8:inst2.IN[3]
+IN[3] => MCx8:inst1.IN[3]
+IN[3] => MCx8:inst.IN[3]
+IN[4] => MCx8:inst3.IN[4]
+IN[4] => MCx8:inst2.IN[4]
+IN[4] => MCx8:inst1.IN[4]
+IN[4] => MCx8:inst.IN[4]
+IN[5] => MCx8:inst3.IN[5]
+IN[5] => MCx8:inst2.IN[5]
+IN[5] => MCx8:inst1.IN[5]
+IN[5] => MCx8:inst.IN[5]
+IN[6] => MCx8:inst3.IN[6]
+IN[6] => MCx8:inst2.IN[6]
+IN[6] => MCx8:inst1.IN[6]
+IN[6] => MCx8:inst.IN[6]
+IN[7] => MCx8:inst3.IN[7]
+IN[7] => MCx8:inst2.IN[7]
+IN[7] => MCx8:inst1.IN[7]
+IN[7] => MCx8:inst.IN[7]
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst3|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|DECODE2_4:inst4
+D[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst5.IN0
+A0 => inst2.IN0
+A0 => inst3.IN1
+A0 => inst5.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst2|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst1|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst9|MCx8:inst|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10
+OUT[0] <= OUT~7.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT~6.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT~5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT~4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT~3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= OUT~2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= OUT~1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= OUT~0.DB_MAX_OUTPUT_PORT_TYPE
+CS => inst34.IN0
+CS => inst36.IN0
+CS => inst5.IN1
+CS => inst35.IN0
+CS => inst37.IN0
+A1 => DECODE2_4:inst4.A1
+A0 => DECODE2_4:inst4.A0
+RWS => inst5.IN0
+IN[0] => MCx8:inst3.IN[0]
+IN[0] => MCx8:inst2.IN[0]
+IN[0] => MCx8:inst1.IN[0]
+IN[0] => MCx8:inst.IN[0]
+IN[1] => MCx8:inst3.IN[1]
+IN[1] => MCx8:inst2.IN[1]
+IN[1] => MCx8:inst1.IN[1]
+IN[1] => MCx8:inst.IN[1]
+IN[2] => MCx8:inst3.IN[2]
+IN[2] => MCx8:inst2.IN[2]
+IN[2] => MCx8:inst1.IN[2]
+IN[2] => MCx8:inst.IN[2]
+IN[3] => MCx8:inst3.IN[3]
+IN[3] => MCx8:inst2.IN[3]
+IN[3] => MCx8:inst1.IN[3]
+IN[3] => MCx8:inst.IN[3]
+IN[4] => MCx8:inst3.IN[4]
+IN[4] => MCx8:inst2.IN[4]
+IN[4] => MCx8:inst1.IN[4]
+IN[4] => MCx8:inst.IN[4]
+IN[5] => MCx8:inst3.IN[5]
+IN[5] => MCx8:inst2.IN[5]
+IN[5] => MCx8:inst1.IN[5]
+IN[5] => MCx8:inst.IN[5]
+IN[6] => MCx8:inst3.IN[6]
+IN[6] => MCx8:inst2.IN[6]
+IN[6] => MCx8:inst1.IN[6]
+IN[6] => MCx8:inst.IN[6]
+IN[7] => MCx8:inst3.IN[7]
+IN[7] => MCx8:inst2.IN[7]
+IN[7] => MCx8:inst1.IN[7]
+IN[7] => MCx8:inst.IN[7]
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst3|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|DECODE2_4:inst4
+D[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+D[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D[2] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+D[3] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+A1 => inst4.IN0
+A1 => inst5.IN0
+A0 => inst2.IN0
+A0 => inst3.IN1
+A0 => inst5.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst2|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst1|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst
+OUT[0] <= MCx4:inst1.OUT[0]
+OUT[1] <= MCx4:inst1.OUT[1]
+OUT[2] <= MCx4:inst1.OUT[2]
+OUT[3] <= MCx4:inst1.OUT[3]
+OUT[4] <= MCx4:inst.OUT[0]
+OUT[5] <= MCx4:inst.OUT[1]
+OUT[6] <= MCx4:inst.OUT[2]
+OUT[7] <= MCx4:inst.OUT[3]
+RS => MCx4:inst1.RS
+RS => MCx4:inst.RS
+WE => MCx4:inst1.WE
+WE => MCx4:inst.WE
+IN[0] => MCx4:inst1.IN[0]
+IN[1] => MCx4:inst1.IN[1]
+IN[2] => MCx4:inst1.IN[2]
+IN[3] => MCx4:inst1.IN[3]
+IN[4] => MCx4:inst.IN[0]
+IN[5] => MCx4:inst.IN[1]
+IN[6] => MCx4:inst.IN[2]
+IN[7] => MCx4:inst.IN[3]
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst1
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst1|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst1|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst1|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst1|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst
+OUT[0] <= MC:inst6.OUTPUT
+OUT[1] <= MC:inst5.OUTPUT
+OUT[2] <= MC:inst4.OUTPUT
+OUT[3] <= MC:inst.OUTPUT
+RS => MC:inst.ROW_SELECT
+RS => MC:inst4.ROW_SELECT
+RS => MC:inst5.ROW_SELECT
+RS => MC:inst6.ROW_SELECT
+IN[0] => MC:inst6.INPUT
+IN[1] => MC:inst5.INPUT
+IN[2] => MC:inst4.INPUT
+IN[3] => MC:inst.INPUT
+WE => MC:inst.WRITE_ENABLE
+WE => MC:inst4.WRITE_ENABLE
+WE => MC:inst5.WRITE_ENABLE
+WE => MC:inst6.WRITE_ENABLE
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst|MC:inst
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst|MC:inst4
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst|MC:inst5
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+
+|RAM16x8bit|RAM4x8bit:inst10|MCx8:inst|MCx4:inst|MC:inst6
+OUTPUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+INPUT => inst0.DATAIN
+ROW_SELECT => inst2.IN0
+ROW_SELECT => inst.OE
+WRITE_ENABLE => inst2.IN1
+
+

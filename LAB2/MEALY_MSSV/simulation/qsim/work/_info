@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\THIET_KE_LUAN_LY_SO\LAB2\MEALY_MSSV\simulation\qsim
+vMEALY_MSSV
+Z1 !s100 @V76cWJMa6eGOcLZGPAh50
+Z2 I2Ake^g2efVCG1CW3NH`Db3
+Z3 V55GXUaXVSZzPVGgdMe:973
+Z4 dE:\THIET_KE_LUAN_LY_SO\LAB2\MEALY_MSSV\simulation\qsim
+Z5 w1681808539
+Z6 8MEALY_MSSV.vo
+Z7 FMEALY_MSSV.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|MEALY_MSSV.vo|
+Z10 o-work work -O0
+Z11 n@m@e@a@l@y_@m@s@s@v
+!i10b 1
+!s85 0
+Z12 !s108 1681808540.817000
+Z13 !s107 MEALY_MSSV.vo|
+!s101 -O0
+vMEALY_MSSV_vlg_check_tst
+!i10b 1
+Z14 !s100 P@b>6@k>mbFd1P7Ec0?Nc2
+Z15 INDN8o8cm0^YkVozLBKkA:0
+Z16 VGoo;:Yj04f2NKfSnnP3VO0
+R4
+Z17 w1681808538
+Z18 8MEALY_MSSV.vt
+Z19 FMEALY_MSSV.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1681808540.925000
+Z21 !s107 MEALY_MSSV.vt|
+Z22 !s90 -work|work|MEALY_MSSV.vt|
+!s101 -O0
+R10
+Z23 n@m@e@a@l@y_@m@s@s@v_vlg_check_tst
+vMEALY_MSSV_vlg_sample_tst
+!i10b 1
+Z24 !s100 @::gJQzLUZ1Q^ia?hXac<0
+Z25 IjFPKi8iRPHhe`Uk^JUZEW2
+Z26 VUIAR<GziF<jc[37Z7>]AX2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@m@e@a@l@y_@m@s@s@v_vlg_sample_tst
+vMEALY_MSSV_vlg_vec_tst
+!i10b 1
+!s100 05a<UKb_z8_VOcG[[P2ok1
+Iz`n>>RGmMFN1Vg``ISaPS2
+Z28 VO;h3o5J@KLm6doHTRR@b?1
+R4
+R17
+R18
+R19
+Z29 L0 216
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@m@e@a@l@y_@m@s@s@v_vlg_vec_tst

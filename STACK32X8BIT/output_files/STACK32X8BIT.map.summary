@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 05 10:11:01 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : STACK32X8BIT
+Top-level Entity Name : STACK32X8BIT
+Family : Cyclone II
+Total logic elements : 565
+    Total combinational functions : 565
+    Dedicated logic registers : 10
+Total registers : 10
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

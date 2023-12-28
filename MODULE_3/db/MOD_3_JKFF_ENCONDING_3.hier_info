@@ -1,0 +1,56 @@
+|MODULE_MOD_3_JKFF_ENCONDING_3
+Y <= MODULE_3:inst5.Y
+C => MODULE_3:inst5.C
+C => MODULE_1:inst.C
+D => MODULE_3:inst5.D
+D => MODULE_1:inst.D
+CLK => MODULE_2:inst4.CLK
+Q1 <= MODULE_2:inst4.Q1
+Q0 <= MODULE_2:inst4.Q0
+J1 <= MODULE_1:inst.J1
+K1 <= MODULE_1:inst.K1
+J0 <= MODULE_1:inst.J0
+K0 <= MODULE_1:inst.K0
+
+
+|MODULE_MOD_3_JKFF_ENCONDING_3|MODULE_3:inst5
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+C => inst1.IN0
+C => inst.IN0
+D => inst2.IN0
+D => inst.IN1
+Q1 => inst1.IN2
+Q0 => inst.IN2
+
+
+|MODULE_MOD_3_JKFF_ENCONDING_3|MODULE_2:inst4
+Q1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+K1 => inst2~1.IN0
+J1 => inst2~0.IN1
+CLK => inst2.CLK
+CLK => inst1.CLK
+Q0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+K0 => inst1~1.IN0
+J0 => inst1~0.IN1
+
+
+|MODULE_MOD_3_JKFF_ENCONDING_3|MODULE_1:inst
+J1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+C => inst9.IN0
+C => inst.IN0
+C => K1.DATAIN
+C => inst14.IN0
+C => inst12.IN0
+C => K0.DATAIN
+D => inst10.IN0
+D => inst.IN1
+D => inst12.IN1
+Q0 => inst11.IN0
+Q0 => inst.IN2
+K1 <= C.DB_MAX_OUTPUT_PORT_TYPE
+J0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Q1 => inst14.IN2
+Q1 => inst13.IN0
+K0 <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

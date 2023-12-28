@@ -1,0 +1,129 @@
+# do ALU.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LU
+# 
+# Top level modules:
+# 	LU
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LU_vlg_sample_tst
+# -- Compiling module LU_vlg_check_tst
+# -- Compiling module LU_vlg_vec_tst
+# 
+# Top level modules:
+# 	LU_vlg_vec_tst
+# vsim -L cycloneii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.LU_vlg_vec_tst 
+# Loading work.LU_vlg_vec_tst
+# Loading work.LU
+# Loading cycloneii_ver.cycloneii_io
+# Loading cycloneii_ver.cycloneii_mux21
+# Loading cycloneii_ver.cycloneii_dffe
+# Loading cycloneii_ver.cycloneii_asynch_io
+# Loading cycloneii_ver.cycloneii_lcell_comb
+# Loading work.LU_vlg_sample_tst
+# Loading work.LU_vlg_check_tst
+# Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
+# ERROR! Vector Mismatch for output port S[1] :: @time = 50000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 0000000000010010
+# ERROR! Vector Mismatch for output port S[4] :: @time = 50000.000 ps
+#      Expected value = 0000000000000000
+#      Real value = 0000000000010010
+# ERROR! Vector Mismatch for output port S[2] :: @time = 100000.000 ps
+#      Expected value = 0000000000000001
+#      Real value = 0000000000111111
+# ERROR! Vector Mismatch for output port S[3] :: @time = 100000.000 ps
+#      Expected value = 0000000000000001
+#      Real value = 0000000000111111
+# ERROR! Vector Mismatch for output port S[5] :: @time = 100000.000 ps
+#      Expected value = 0000000000000001
+#      Real value = 0000000000111111
+# ERROR! Vector Mismatch for output port S[0] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[1] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[6] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[7] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[8] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[9] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[10] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[11] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[12] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[13] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[14] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[15] :: @time = 150000.000 ps
+#      Expected value = 0000000000000010
+#      Real value = 1111111111101101
+# ERROR! Vector Mismatch for output port S[2] :: @time = 250000.000 ps
+#      Expected value = 0000000000000100
+#      Real value = 0000000001000000
+# ERROR! Vector Mismatch for output port S[0] :: @time = 300000.000 ps
+#      Expected value = 0000000000000101
+#      Real value = 0000000001001100
+# ERROR! Vector Mismatch for output port S[0] :: @time = 350000.000 ps
+#      Expected value = 0000000000000110
+#      Real value = 1111111110111111
+# ERROR! Vector Mismatch for output port S[0] :: @time = 400000.000 ps
+#      Expected value = 0000000000000111
+#      Real value = 0000000000001100
+# ERROR! Vector Mismatch for output port S[1] :: @time = 450000.000 ps
+#      Expected value = 0000000000001000
+#      Real value = 0000000000100010
+# ERROR! Vector Mismatch for output port S[3] :: @time = 450000.000 ps
+#      Expected value = 0000000000001000
+#      Real value = 0000000000100010
+# ERROR! Vector Mismatch for output port S[2] :: @time = 500000.000 ps
+#      Expected value = 0000000000001001
+#      Real value = 0000000001101110
+# ERROR! Vector Mismatch for output port S[0] :: @time = 550000.000 ps
+#      Expected value = 0000000000001010
+#      Real value = 1111111111011101
+# ERROR! Vector Mismatch for output port S[1] :: @time = 550000.000 ps
+#      Expected value = 0000000000001010
+#      Real value = 1111111111011101
+# ERROR! Vector Mismatch for output port S[0] :: @time = 600000.000 ps
+#      Expected value = 0000000000001011
+#      Real value = 0000000001001100
+# ERROR! Vector Mismatch for output port S[2] :: @time = 650000.000 ps
+#      Expected value = 0000000000001100
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port S[0] :: @time = 750000.000 ps
+#      Expected value = 0000000000001110
+#      Real value = 1111111111111111
+# ERROR! Vector Mismatch for output port S[0] :: @time = 800000.000 ps
+#      Expected value = 0000000000001111
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port S[4] :: @time = 850000.000 ps
+#      Expected value = 0000000000010000
+#      Real value = 0000000000000000
+# ERROR! Vector Mismatch for output port S[0] :: @time = 950000.000 ps
+#      Expected value = 0000000000010010
+#      Real value = 1111111111111111
+# ERROR! Vector Mismatch for output port S[2] :: @time = 950000.000 ps
+#      Expected value = 0000000000010010
+#      Real value = 1111111111111111
+# ERROR! Vector Mismatch for output port S[3] :: @time = 950000.000 ps
+#      Expected value = 0000000000010010
+#      Real value = 1111111111111111
+#          34 mismatched vectors : Simulation failed !
+# ** Note: $finish    : ALU.vt(436)
+#    Time: 1 us  Iteration: 0  Instance: /LU_vlg_vec_tst/tb_out

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\THIET_KE_LUAN_LY_SO\datapath_pinelined_SRA\SRA_DTP_PL\simulation\qsim
+vREG_8BIT
+Z1 !s100 HoAmOCH[GganK]XoENiEn3
+Z2 IAUgFAfVJ:oQ<1;942icPg2
+Z3 Vc3G8HKAKBdJ0MRCR[LoQ<0
+Z4 dE:\THIET_KE_LUAN_LY_SO\datapath_pinelined_SRA\SRA_DTP_PL\simulation\qsim
+Z5 w1683900798
+Z6 8SRA_DTP_PL.vo
+Z7 FSRA_DTP_PL.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|SRA_DTP_PL.vo|
+Z10 o-work work -O0
+Z11 n@r@e@g_8@b@i@t
+!i10b 1
+!s85 0
+Z12 !s108 1683900799.763000
+Z13 !s107 SRA_DTP_PL.vo|
+!s101 -O0
+vREG_8BIT_vlg_check_tst
+!i10b 1
+Z14 !s100 G??eI;TPZ@E6U>WD4F:iJ2
+Z15 I]7G[ERU9J<4on>_L8i5Ad3
+Z16 VGzh<4E5TNf@5`oJUmNDnJ1
+R4
+Z17 w1683900797
+Z18 8SRA_DTP_PL.vt
+Z19 FSRA_DTP_PL.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z20 !s108 1683900799.914000
+Z21 !s107 SRA_DTP_PL.vt|
+Z22 !s90 -work|work|SRA_DTP_PL.vt|
+!s101 -O0
+R10
+Z23 n@r@e@g_8@b@i@t_vlg_check_tst
+vREG_8BIT_vlg_sample_tst
+!i10b 1
+Z24 !s100 o[:]a6HIo9jSADNcOB2YK2
+Z25 IzlVjhK5WmVWPbSdoXd6ln1
+Z26 V^8d9jC;?KlWS`@97HJ;e[2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@r@e@g_8@b@i@t_vlg_sample_tst
+vREG_8BIT_vlg_vec_tst
+!i10b 1
+!s100 e4TC2`4L_<P:6c@m78dez2
+IZ;Y=i4e7iiX[GDT0>VE8e2
+Z28 V3L8NUZHK?]OcTEFAWbYlF1
+R4
+R17
+R18
+R19
+Z29 L0 283
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@r@e@g_8@b@i@t_vlg_vec_tst

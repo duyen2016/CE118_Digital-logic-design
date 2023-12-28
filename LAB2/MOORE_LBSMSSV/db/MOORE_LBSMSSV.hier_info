@@ -1,0 +1,28 @@
+|MOORE_LBSMSSV
+OUTPUT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+I => NEXTSTATE:inst.I
+
+
+|MOORE_LBSMSSV|NEXTSTATE:inst
+D2 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+I => inst1.IN0
+I => inst2.IN0
+I => inst9.IN1
+I => inst12.IN2
+Q2 => inst3.IN0
+Q2 => inst.IN1
+Q2 => inst7.IN0
+Q2 => inst11.IN0
+Q2 => inst10.IN1
+Q1 => inst4.IN0
+Q1 => inst7.IN1
+Q0 => inst1.IN3
+Q0 => inst5.IN0
+Q0 => inst11.IN1
+D1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+
+
